@@ -1,0 +1,76 @@
+# ----
+# Site
+
+title: Foss Pakistan
+url: fosspakistan.github.io
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /fosspak.jpg
+description: Foss Pakistan is organization for Developing and Promoting Free and Open Source Software and cooperating with the most forward thinking Open Tech innovators and Developers of Pakistan. Bringing together an inspiring community across the Pakistan and ages to form a better future with Open Technologies in Pakistan. 
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Foss Pakistan
+  links:
+    - https://github.com/fosspakistan
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+donation_embed: ''
+newsletter_action: ""
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
+theme: jekyll-theme-cayman
